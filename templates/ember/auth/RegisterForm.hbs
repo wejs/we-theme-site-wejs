@@ -15,7 +15,7 @@
         {{we-sys-messages messages=messages}}
 
         <form  {{action "submit" on="submit"}} name="createAccountForm" class="user-signup-form" method="POST">
-          <h4>Informações nescessárias para criação da conta:</h4>
+          <h4>{{t 'auth.register.description'}}</h4>
           <!-- input: username -->
           <div class="form-group">
             <div class="input-group">
@@ -68,7 +68,7 @@
           </div>
           <!-- /input: password -->
           <hr>
-          <h4>Informações opcionais:</h4>
+          <h4>{{t 'auth.register.optionalInformations'}}</h4>
           <!-- input: displayName -->
           <div class="form-group">
             <div class="input-group">
@@ -86,7 +86,7 @@
             <div class="input-group">
               <label for="language" class="input-group-addon">
                 <span class="glyphicon glyphicon-globe"></span> {{t 'auth.register.language.label'}}
-              </label>
+              </label> {{log this}}
               {{view "select" name="language" value=user.language content=defaultlanguages classNames="form-control input-md"}}
             </div>
           </div>
