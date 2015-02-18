@@ -3,7 +3,7 @@
   <head>
     <title><%- sails.config.clientside.publicVars.appName %> | <%- title %></title>
 
-    <% if (typeof metadata !== 'undefined' || metadata) { %>
+    <% if (!_.isEmpty(metadata)) { %>
       <% include ../partials/metadata %>
     <% } else { %>
       <% include ../partials/default-metadata %>
@@ -33,9 +33,7 @@
   </head>
   <body>
     <noscript>
-      <div class="container">
-        <%- body %>
-      </div>
+      <%- body %>
     </noscript>
 
     <%- sails.services.theme.getJsScriptTag() %>
