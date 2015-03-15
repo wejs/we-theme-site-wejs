@@ -8,9 +8,8 @@ module.exports = {
   configs: {
     // sails views
     views: {
-      path: 'templates/sails',
-      layout: 'templates/sails/layouts/default.ejs',
-      filesToInjectCssJs: 'templates/sails/**/*.ejs',
+      path: 'templates/server',
+      layout: 'templates/server/layouts/default.hbs'
     },
 
     emberTemplates: {
