@@ -1,12 +1,12 @@
 /**
  * @module  Theme
- * @name    we-theme-themes
+ * @name    we-theme-site-wejs
  */
 
 module.exports = {
   // theme config
   configs: {
-    // sails views
+    // server views
     views: {
       path: 'templates/server',
       layout: 'templates/server/layouts/default.hbs'
@@ -19,9 +19,6 @@ module.exports = {
     emailTemplates: {
       path: 'templates/email',
     },
-
-    assetsFolderToCopy: 'assets/**/*',
-
     javascript: 'dist/scripts.js',
     stylesheet: 'dist/style.css'
   }
