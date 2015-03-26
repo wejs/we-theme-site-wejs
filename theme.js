@@ -19,7 +19,7 @@ module.exports = {
     emailTemplates: {
       path: 'templates/email',
     },
-    javascript: 'dist/scripts.js',
-    stylesheet: 'dist/style.css'
+    javascript: 'files/public/scripts.js',
+    stylesheet: 'files/public/style.css'
   }
 };
