@@ -20,16 +20,15 @@
       <li>
         {{#link-to 'authChangePassword'}}{{t 'Change password'}}{{/link-to}}
       </li>
-      <li class="divider"></li>      
-      {{#if adminMenu}}
+      <li class="divider"></li>
+
       <li>
         <a href="/admin">
           {{t 'menu.link.manage'}}
         </a>
-
-      </li>      
+      </li>
       <li class="divider"></li>
-      {{/if}}
+
       <li>
         <a href="/auth/logout" {{action 'logOut'}} class="">{{t 'Exit'}}</a>
       </li>
