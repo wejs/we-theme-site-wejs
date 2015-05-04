@@ -32,7 +32,7 @@
     <div class="header panel-body">
       <div class="user-area-data row">
         <div class="user-area-data-left col-md-2" >
-          <span class="avatar-large">{{we-avatar userId=user.id size="responsive"}}</span>
+          <span class="avatar-large">{{user-avatar user=user size="medium"}}</span>
           <div class="user-username text-center">
             {{we-editable-text tagName='strong' name='username' value=user.username isEditing=edit}}
           </div>
@@ -50,7 +50,7 @@
           <div class="actions">
             {{#if showSocialActions}}
               <span class="social">
-                {{view App.ContactButtomView contactStatus=contactStatus}}
+                {{!-- {{view "contact-buttom" contactStatus=contactStatus}} --}}
                 {{we-follow model='user' modelId=user.id flagText="Seguir" unFlagText="Seguindo"}}
               </span>
             {{/if}}
