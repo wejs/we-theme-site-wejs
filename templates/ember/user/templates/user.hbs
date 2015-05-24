@@ -59,7 +59,7 @@
           <div class="actions">
             {{#if showSocialActions}}
               <span class="social">
-                {{!-- {{view "contact-buttom" contactStatus=contactStatus}} --}}
+                {{we-contact-button user=user}}
                 {{we-follow model='user' modelId=user.id flagText="Seguir" unFlagText="Seguindo"}}
               </span>
             {{/if}}
