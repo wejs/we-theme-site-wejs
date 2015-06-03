@@ -5,25 +5,26 @@
 
     {{{render-metadata-tags}}}
 
-    <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
     <meta name="csrf-token" content="<%= _csrf %>" />
 
-    {{{render-stylesheet-tags}}}
+    <script type="text/javascript" src="/public/project/client/bower_components/jquery/dist/jquery.min.js"></script>
 
+    <script src="/public/project/client/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="/public/project/client/app/app.html">
+
+    {{{render-stylesheet-tags}}}
   </head>
-  <body>
+  <body unresolved class="fullbleed layout vertical">
     <noscript>
       {{{body}}}
     </noscript>
 
     {{{render-bootstrap-config}}}
-    {{{render-javascript-tags}}}
-    <!-- Load ember.js models -->
-    <script type="text/javascript" src="/api/v1/models/emberjs"></script>
+    <wejs-app title="{{title}}" id="app"></wejs-app>
   </body>
 </html>
