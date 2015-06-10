@@ -8,8 +8,7 @@ module.exports = {
   configs: {
     // server views
     views: {
-      path: 'templates/server',
-      layout: 'templates/server/layouts/default.hbs'
+      path: 'templates/server'
     },
 
     emberTemplates: {
