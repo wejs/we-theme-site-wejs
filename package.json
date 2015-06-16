@@ -8,7 +8,10 @@
     "url": "https://github.com/wejs/we-theme-site-wejs"
   },
   "main": "./theme.js",
-  "dependencies": {},
+  "dependencies": {
+    "file": "^0.2.2",
+    "recursive-readdir": "^1.2.1"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {

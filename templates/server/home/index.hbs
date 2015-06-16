@@ -1,187 +1,122 @@
-<div id="sember760" class="ember-view"><div class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a id="sember778" class="ember-view navbar-brand active" href="/">
-        <img class="img-responsive navbar-logo" src="/public/plugin/we-core/files/images/logo-small.png" data-bindattr-817="817">
-        We blog
-      </a>
-
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse" id="navbar-main">
-      <ul id="sember791" class="ember-view nav nav navbar-nav">
-  <li>
-
-
-
-          <a id="sember832" class="ember-view active" href="/">
-            <span id="sember840" class="ember-view">Home</span>
-          </a>
-
-
-
-  </li>
-
-  <li>
-
-
-        <a id="sember845" class="ember-view" href="/page/1">
-          <span id="sember878" class="ember-view">Get started</span>
-        </a>
-
-
-  </li>
-
-  <li>
-
-
-        <a id="sember883" class="ember-view" href="/page/3">
-          <span id="sember885" class="ember-view">Features</span>
-        </a>
-
-
-  </li>
-
-  <li>
-
-      <a href="https://github.com/wejs/we" data-bindattr-889="889" target="_blank" data-bindattr-890="890">
-        <span id="sember891" class="ember-view">Github</span>
-      </a>
-
-  </li>
-</ul>
-
-
-
-      <ul class="nav navbar-nav navbar-right">
-
-
-
-            <li id="sember903" class="ember-view"><a data-ember-action="904" class="btn navbar-login-buttom navbar-btn">
-  <span class="glyphicon glyphicon-log-in"></span> Login
-</a>
-
-<!-- Modal -->
-<div class="modal" id="AuthLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-<form class="form center-block" role="form" name="loginForm" method="post" data-ember-action="906">
-
-<div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-  Login Form
-</div>
-
-<div class="modal-body">
-  <div id="sember912" class="ember-view">
-</div>
-
-  <!-- form-login -->
-  <div class="form-login">
-      <div class="form-group">
-        <label class="sr-only">Email address</label>
-        <input id="sember918" class="ember-view ember-text-field form-control input-lg" placeholder="Email address" type="email" name="email">
-      </div>
-
-      <div class="form-group">
-        <label class="sr-only">Password</label>
-        <input id="sember920" class="ember-view ember-text-field form-control input-lg" placeholder="Password" type="password">
-      </div>
-
-    <p class="login-form-links">
-      <a data-ember-action="921" class="link" href="/auth/forgot-password">
-        <span class="glyphicon glyphicon-question-sign"></span>
-        Forgot password?
-      </a>
-      |
-      <a data-ember-action="923" class="link" href="/auth/reset-password">
-        <span class="glyphicon glyphicon-log-in"></span> Register
-      </a>
-    </p>
-
-  </div>
-  <!-- /form-login -->
-
-</div>
-
-<div class="modal-footer">
-
-<div class="row">
-  <div class=" col-sm-6">
-    <button id="loginButton" class="pull-left btn btn-primary" type="submit">Sing in</button>
-  </div>
-</div>
-
-
-
-
-    </div></form>
-  </div>
-</div>
-
-
-</div></li>
-
-          <li>
-            <a id="sember895" class="ember-view  navbar-login-buttom navbar-btn" href="/signup">
-              <i class="glyphicon glyphicon-plus"></i>
-              <i class="glyphicon glyphicon-user"></i>
-               Register
-            </a>
-
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- Navigation -->
-
-
-<!-- Page Header -->
 <main class="bs-docs-masthead" role="main">
-  <div class="container">
-
-    <img alt="We.js logo" src="/public/theme/we-theme-site-wejs/images/we-logo-inverse.png">
-
-    <p class="lead">We.js is a node.js framework for real time applications, sites or blogs!</p>
+  <div>
+    <h1>We.js</h1>
+    <br><br>
+    <p class="lead">A node.js framework for real time applications, sites or blogs!</p>
     <p class="lead">
-      <a id="sember946" class="ember-view btn btn-outline-inverse btn-lg" href="/page/1">
+      {{#link-to 'wejsdoc.findOnePage' 'we' 'getstarted' class="ember-view btn btn-outline-inverse btn-lg"}}
         Install We.js
-      </a>
+      {{/link-to}}
     </p>
+  </div>
+
+  <div class="bs-docs-social">
+    <br>
+    <div class="bs-docs-social-buttons">
+      <span>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=wejs&amp;repo=we&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+      </span>
+      <span>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=wejs&amp;repo=we&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+      </span>
+      <span class="follow-btn">
+        <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.a5bbbb7216610af1306d56b0f28a67d7.en.html#_=1424192283453&amp;dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=we_js&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 240px; height: 20px;"></iframe>
+      </span>
+    </ul>
   </div>
 </main>
-
 <div class="bs-docs-featurette">
-  <div class="container">
-    <h2 class="bs-docs-featurette-title">We.js makes building web applications simpler, faster and require less code</h2>
-    <p class="lead">Is distributed in small modules that together form a system as a blog or an application.</p>
+  <div>
+    <h2 class="bs-docs-featurette-title">We.js makes building web applications simpler and faster.</h2>
+    <p class="lead">We.js core has many built-in features but you can create plugins to extend server and client resources.</p>
 
     <hr class="half-rule">
 
     <div class="row">
       <div class="col-sm-4">
+        <a href="https://github.com/wejs?query=plugin" target="_blank">
+          <img alt="Generators" src="/public/theme/we-theme-site-wejs/images/plugins.png">
+        </a>
         <h3>Plugins</h3>
-        <p>Extends we.js projects with new client and server side features, see avaible plugins in <a alt="We.js plugins" href="https://github.com/wejs?query=plugin">link</a></p>
+        <p>We.js core has many features but you can create plugins for extend server and client resources.</p>
       </div>
       <div class="col-sm-4">
+        <a href="https://github.com/wejs?query=theme" target="_blank">
+          <img src="/public/theme/we-theme-site-wejs/images/themes.png">
+        </a>
         <h3>Themes</h3>
-        <p>Beautiful themes for create awesome application. Themes has power to extend default plugin templates</p>
+        <p>Be free to create beautiful themes for your own projects. Themes have the power to extend default plugin templates</p>
       </div>
 
       <div class="col-sm-4">
+        <a href="https://github.com/wejs/generator-wejs" target="_blank">
+          <img alt="Generators" src="/public/theme/we-theme-site-wejs/images/generators.png">
+        </a>
         <h3>Generators</h3>
         <p>Generate one functional project structure in seconds with <a alt="We.js plugins" href="https://github.com/wejs/generator-wejs">we.js generator</a>.</p>
       </div>
+    </div>
 
+    <hr class="half-rule">
+
+    <h2 id="features">Features</h2>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-user bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>User</h3>
+        <p>Login, regiter, change password profile, and user management.</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon glyphicon-comment bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Comment</h3>
+        <p>Comment upon any model defined.</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-picture bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Image</h3>
+        <p>Upload, resize and load images in multiple styles.</p>
+      </div>
+      <div>
+        <span class="glyphicon glyphicon-list-alt bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Page</h3>
+        <p>Write html texts with suport to tags, categories and images.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-tag bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Terms and Tags</h3>
+        <p>Configurable term field for any model with suport to vocabulary.</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-globe bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Group</h3>
+        <p>Groups are a fabulous way to share content and conversation, either privately or with the world.</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-share-alt bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Post</h3>
+        <p>Use the sharebox to share texts, videos, images and wembeds to groups and users.</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-cog bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Administrative interface</h3>
+        <p>Clean interface to manage your project resources.</p>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h2>Real time features like we.js chat box:</h2>
+        <br><br>
+
+        <iframe width="100%" height="400px" frameborder="0" src="/widget/room/1?height=300"></iframe>
+      </div>
     </div>
 
     <hr class="half-rule">
@@ -190,93 +125,3 @@
     <a href="https://github.com/wejs/we" class="btn btn-outline btn-lg">View the GitHub project</a>
   </div>
 </div>
-
-
-<!-- Footer -->
-<footer class="bs-docs-footer" role="contentinfo">
-  <div class="container">
-    <div class="bs-docs-social">
-      <ul class="bs-docs-social-buttons">
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=wejs&amp;repo=we&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-        </li>
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=wejs&amp;repo=we&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-        </li>
-        <li class="follow-btn">
-          <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.a5bbbb7216610af1306d56b0f28a67d7.en.html#_=1424192283453&amp;dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=we_js&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 240px; height: 20px;"></iframe>
-        </li>
-      </ul>
-    </div>
-
-
-    <p>Built with a lot of work and love by <a href="https://twitter.com/mdo" target="_blank">@albertosouza</a>.</p>
-    <p>Maintained by the <a href="https://github.com/orgs/wejs/people">core team</a>.</p>
-    <p>Code licensed under MIT.</p>
-    <p>Theme from <a href="http://bootswatch.com/sandstone/">bootswatch</a> and bootstrap docs</p>
-    <br>
-
-    <ul class="list-inline text-center">
-
-      <li>
-        <a target="_blank" href="https://twitter.com/we_js" data-bindattr-949="949">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-
-
-
-      <li>
-        <a target="_blank" href="https://github.com/wejs/we" data-bindattr-952="952">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-
-    </ul>
-    <p class="copyright text-muted">
-      Copyleft, <strong>We.js site</strong> 2014
-      - <a href="http://wejs.org">We.js powered!</a>
-    </p>
-  </div>
-</footer>
-
-<div id="sember815" class="ember-view"><!-- Modal avatarChangeModal -->
-<div class="modal" id="avatarChangeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-<form id="avatar-upload" class="form-upload-avatar" name="uploadAvatarForm">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 class="modal-title">Change avatar</h4>
-  </div>
-  <div class="modal-body">
-    <div class="row"><div class=" col-lg-offset-2 col-lg-8">
-
-        <div class="form-group">
-        <br><br>
-          <div class="form-controll file-uploader">
-            <div class="col-md-8">
-              <input id="sember964" class="ember-view ember-text-field" type="file" accept="image/x-png, image/gif, image/jpeg" multiple="false">
-            </div>
-          </div>
-        </div>
-
-    </div></div>
-  </div>
-  <div class="modal-footer">
-
-      <button class="btn btn-primary" type="buttom" data-ember-action="966">Selecionar imagem</button>
-
-    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-  </div>
-</form>
-    </div>
-  </div>
-</div></div></div>
