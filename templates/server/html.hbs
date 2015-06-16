@@ -26,8 +26,7 @@
       {{#link-to 'main.index' class="navbar-brand"}}{{appName}}{{/link-to}}
     </div>
 
-    <we-user-menu></we-user-menu>
-    <we-main-menu></we-main-menu>
+    {{{template 'user/usermenu'}}}
 
     <div class="sidebar-nav navbar-collapse">
       <we-menu-vertical class="nav in" id="side-menu" menu="admin"></we-menu-vertical>
