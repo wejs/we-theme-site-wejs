@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{appName}}</title>
+  <title>{{title}}</title>
 
   {{{render-metadata-tags}}}
 
@@ -23,12 +23,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to 'main.index' class="navbar-brand"}}{{title}}{{/link-to}}
+      {{#link-to 'main.index' class="navbar-brand"}}{{appName}}{{/link-to}}
     </div>
 
     {{we-menu 'main'}}
 
-    {{{template 'user/usermenu'}}}
+    {{!-- {{{template 'user/usermenu'}}} --}}
 
     <div class="sidebar-nav navbar-collapse">
       <we-menu-vertical class="nav in" id="side-menu" menu="admin"></we-menu-vertical>
