@@ -3,16 +3,13 @@
 <head>
   <title>{{title}}</title>
 
-  {{{render-metadata-tags}}}
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <meta name="csrf-token" content="{{_csrf}}" />
 
-  <script type="text/javascript" src="/public/project/client/bower_components/jquery/dist/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/public/plugin/we-core/client/shared/libs/jquery-ui/jquery-ui.min.css">
-
+  {{{render-metadata-tags}}}
   {{{render-stylesheet-tags}}}
+  {{{render-javascript-tags 'header'}}}
 </head>
 <body>
   <div class="navbar navbar-default"><div class="container">
@@ -38,11 +35,7 @@
   {{{layoutHtml}}}
 
   {{{render-bootstrap-config}}}
-  <script type="text/javascript" src="/public/plugin/we-core/client/shared/libs/jquery-ui/jquery-ui.min.js"></script>
-  <script src="/public/project/client/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="/public/project/client/bower_components/page/page.js"></script>
-  <script type="text/javascript" src="/public/plugin/we-core/files/javascript/we.js"></script>
-  <script type="text/javascript">window.we.initialize();</script>
+  {{{render-javascript-tags 'footer'}}}
 
   <script type="text/javascript">
     //Loads the correct sidebar on window load,
