@@ -5,7 +5,7 @@
   "homepage": "https://wejs.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wejs/we-theme-site-wejs"
+    "url": "git+https://github.com/wejs/we-theme-site-wejs.git"
   },
   "main": "./theme.js",
   "dependencies": {
@@ -15,5 +15,32 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "gitHead": "606c3c4a61d7eae4af643a855921bf4b4a25ffe1",
+  "bugs": {
+    "url": "https://github.com/wejs/we-theme-site-wejs/issues"
+  },
+  "_id": "we-theme-site-wejs@0.3.14",
+  "scripts": {},
+  "_shasum": "3395efeb605c26e7546566071de354601f95c832",
+  "_from": "we-theme-site-wejs@0.3.14",
+  "_npmVersion": "2.9.1",
+  "_nodeVersion": "0.10.36",
+  "_npmUser": {
+    "name": "albertosouza",
+    "email": "contato@albertosouza.net"
+  },
+  "dist": {
+    "shasum": "3395efeb605c26e7546566071de354601f95c832",
+    "tarball": "http://registry.npmjs.org/we-theme-site-wejs/-/we-theme-site-wejs-0.3.14.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "albertosouza",
+      "email": "contato@albertosouza.net"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/we-theme-site-wejs/-/we-theme-site-wejs-0.3.14.tgz",
+  "readme": "ERROR: No README data found!"
 }
