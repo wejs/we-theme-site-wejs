@@ -2,7 +2,7 @@
   <div>
     <h1>We.js</h1>
     <br><br>
-    <p class="lead">A node.js framework for real time applications, sites or blogs!</p>
+    <p class="lead">Node.js framework for real time applications, sites or blogs!</p>
     <p class="lead">
       {{#link-to 'wejsdoc.findOnePage' 'we' 'getstarted' class="ember-view btn btn-outline-inverse btn-lg"}}
         Install We.js
@@ -27,8 +27,8 @@
 </main>
 <div class="bs-docs-featurette">
   <div class="container">
-    <h2 class="bs-docs-featurette-title">We.js makes building web applications simpler and faster.</h2>
-    <p class="lead">We.js core has many built-in features but you can create plugins to extend server and client resources.</p>
+    <h2 class="bs-docs-featurette-title">Generate you app or full featured project.</h2>
+    <p class="lead">We.js core has many built-in features but you can install or create plugins and themes to extend your project.</p>
 
     <hr class="half-rule">
 
@@ -38,7 +38,7 @@
           <img alt="Generators" src="/public/theme/we-theme-site-wejs/images/plugins.png">
         </a>
         <h3>Plugins</h3>
-        <p>We.js core has many features but you can create plugins for extend server and client resources.</p>
+        <p>We.js core has many features but you can create plugins for extend your project resources.</p>
       </div>
       <div class="col-sm-4">
         <a href="https://github.com/wejs?query=theme" target="_blank">
@@ -60,62 +60,131 @@
     <hr class="half-rule">
 
     <h2 id="features">Features</h2>
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation">
+            <a href="#">Plugins</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Themes</a>
+          </li>
+          <li role="presentation">
+            <a href="#">NPM modules</a>
+          </li>
+          <li role="presentation">
+            <a href="#">ORM ( with sequelize )</a>
+          </li>
+          <li role="presentation">
+            <a href="http://wejs.org/docs/we/features.internationalization">I18n (nodei18n)</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Socket.io</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation">
+            <a href="#">Hooks and events</a>
+          </li>
+          <li role="presentation">
+            <a href="http://wejs.dev/docs/we/features.acl">Access Control List (ACL)</a>
+          </li>
+
+          <li role="presentation">
+            <a href="#">Default gulp tasks</a>
+          </li>
+
+          <li role="presentation">
+            <a href="#">Email with templates</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Yeoman generator</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Template helpers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation">
+            <a href="#">Models</a>
+          </li>
+          <li role="presentation">
+            <a href="http://wejs.org/docs/we/features.controllers">Controllers</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Templates</a>
+          </li>
+          <li role="presentation">
+            <a href="http://wejs.org/docs/we/features.routes">Route Resources</a>
+          </li>
+          <li role="presentation">
+            <a href="http://wejs.org/docs/we/features.customresponse">Custom responses</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Configurations</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation">
+            <a href="#">User login and register</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Regions and widgets</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Administrative Interface</a>
+          </li>
+          <li role="presentation">
+            <a href="http://wejs.org/docs/we/features.logging">Logs with winston</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <h2 id="features">Some plugins</h2>
 
     <hr class="half-rule">
 
     <div class="row">
       <div class="col-sm-3">
-        <span class="glyphicon glyphicon-user bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>User</h3>
-        <p>Login, regiter, change password profile, and user management.</p>
-      </div>
-      <div class="col-sm-3">
+        <a href="https://github.com/wejs/we-plugin-disqus">
         <span class="glyphicon glyphicon glyphicon-comment bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Comment</h3>
-        <p>Comment upon any model defined.</p>
+        <h3>Disqus</h3></a>
+        <p>A simple way to add Disqus comments to your site.</p>
       </div>
       <div class="col-sm-3">
+        <a href="https://github.com/wejs/we-plugin-file">
         <span class="glyphicon glyphicon-picture bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Image</h3>
+        <h3>Image</h3></a>
         <p>Upload, resize and load images in multiple styles.</p>
       </div>
       <div class="col-sm-3">
+        <a href="https://github.com/wejs/we-plugin-article">
         <span class="glyphicon glyphicon-list-alt bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Page</h3>
+        <h3>Article</h3></a>
         <p>Write html texts with suport to tags, categories and images.</p>
       </div>
-    </div>
-    <div class="row">
       <div class="col-sm-3">
-        <span class="glyphicon glyphicon-tag bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Terms and Tags</h3>
+        <a href="https://github.com/wejs/we-plugin-vocabulary"><span class="glyphicon glyphicon-tag bs-docs-booticon-lg bs-docs-booticon-outline"></span>
+        <h3>Terms and Tags</h3></a>
         <p>Configurable term field for any model with suport to vocabulary.</p>
       </div>
-      <div class="col-sm-3">
-        <span class="glyphicon glyphicon-globe bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Group</h3>
-        <p>Groups are a fabulous way to share content and conversation, either privately or with the world.</p>
-      </div>
-      <div class="col-sm-3">
-        <span class="glyphicon glyphicon-share-alt bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Post</h3>
-        <p>Use the sharebox to share texts, videos, images and wembeds to groups and users.</p>
-      </div>
-      <div class="col-sm-3">
-        <span class="glyphicon glyphicon-cog bs-docs-booticon-lg bs-docs-booticon-outline"></span>
-        <h3>Administrative interface</h3>
-        <p>Clean interface to manage your project resources.</p>
-      </div>
     </div>
-
     <hr class="half-rule">
 
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <h2>Real time features like we.js chat box:</h2>
         <br><br>
-
-        <iframe width="100%" height="400px" frameborder="0" src="/widget/room/1?height=300"></iframe>
+        {{we-messenger-room roomId=1 heigth=300 iframeHeigth=400 width='100%'}}
       </div>
     </div>
 
