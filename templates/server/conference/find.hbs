@@ -1,9 +1,0 @@
-<h1>{{t 'conference.find'}}</h1>
-
-<div class="conference-find">
-{{#each record}}
- <h3>{{#link-to 'conference_findOne' this.id}} {{title}} {{/link-to}}</h3>
- <p>{{{about}}}</p>
- <div><strong>{{t 'conference.eventStartDate'}}:</strong> {{{eventStartDate}}}</div>
-{{/each}}
-</div>
