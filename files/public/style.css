@@ -5661,3 +5661,7 @@ h1[id] {
 .post .header {
   min-height: 50px;
 }
+
+.navbar {
+  border-radius: inherit;
+}
