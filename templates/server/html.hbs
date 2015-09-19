@@ -12,10 +12,10 @@
   {{{render-javascript-tags 'header'}}}
 </head>
 <body>
+  {{we-event event="we-html-body-start"}}
   {{{template 'partials/header'}}}
-
   {{{layoutHtml}}}
-
   {{{template 'partials/footer'}}}
+  {{we-event event="we-html-body-end"}}
 </body>
 </html>
