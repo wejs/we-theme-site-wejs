@@ -43,8 +43,19 @@ module.exports = {
         }
       }
     },
+    'home': {
+      template: __dirname + '/templates/server/layouts/home.hbs',
+      regions: {
+        highlighted: {
+          name: 'Highlighted'
+        },
+        afterContent: {
+          name: 'After content'
+        }
+      }
+    },
     'fullwidth': {
-      template: __dirname + '/templates/server/full-width-layout.hbs',
+      template: __dirname + '/templates/server/layouts/full-width-layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
