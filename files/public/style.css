@@ -5665,3 +5665,7 @@ h1[id] {
 .navbar {
   border-radius: inherit;
 }
+
+#we-layout img{
+  max-width: 100%
+}
