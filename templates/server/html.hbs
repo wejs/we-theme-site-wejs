@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   {{#unless metadata.image}}
-    <meta property="og:image" content="/public/plugin/we-core/files/images/logo.png">
+    <meta property="og:image" content="{{req.we.config.hostname}}/public/plugin/we-core/files/images/logo.png">
   {{/unless}}
 
   {{#if _csrf}}<meta name="csrf-token" content="{{_csrf}}" />{{/if}}
