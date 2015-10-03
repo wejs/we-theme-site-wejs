@@ -5669,3 +5669,7 @@ h1[id] {
 #we-layout img{
   max-width: 100%
 }
+
+.fb-like.fb_iframe_widget span {
+  vertical-align: inherit !important;
+}
