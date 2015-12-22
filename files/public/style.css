@@ -2229,7 +2229,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #98978b;
+  color: #000;
   background-color: #f8f5f0;
 }
 .nav-stacked > li {
@@ -2639,7 +2639,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #8e8c84;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #98978b;
+  color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -3888,7 +3888,7 @@ input:focus,
   background-color: #f8f5f0;
 }
 .nav-pills a {
-  color: #98978b;
+  color: #000;
 }
 .nav-pills li > a {
   border: 1px solid transparent;
